@@ -1,0 +1,6 @@
+<% flash.each do |key, msg| %>
+  <div class="flex items-center justify-between px-8 py-4 bg-amber-100">
+    <%= msg %>
+    <button onclick="closeFlashAlert()"><%= heroicon "x-mark" %></button>
+  </div>
+<% end %>

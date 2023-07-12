@@ -1,0 +1,19 @@
+<div class="my-4 text-center">
+  <%= avatar(@user, 200) %>
+  <p class="text-2xl"><%= @user.name %></p>
+  <p><%= mail_to @user.email %></p>
+</div>
+
+<div class="my-4">
+  <p>
+    <b>Created at</b>
+    <%= time_ago @user.created_at %>
+    <span class="text-xs text-slate-500"><%= format_time @user.created_at %></span>
+  </p>
+  <p>
+    <b>Updated at</b>
+    <%= time_ago @user.updated_at %>
+    <span class="text-xs text-slate-500"><%= format_time @user.updated_at %></span>
+  </p>
+  <p><b>Total Articles</b> <%= @user.articles.size %></p>
+</div>

@@ -1,0 +1,40 @@
+<h1>Users</h1>
+
+<div class="table-responsive mt-8">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th><%= sort_link(@q, :name) %></th>
+        <th><%= sort_link(@q, :email) %></th>
+        <th><%= sort_link(@q, :created_at) %></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td class="text-center">
+            <%= avatar(user, 60) %>
+          </td>
+          <td>
+            <%= user.name %>
+          </td>
+          <td>
+            <%= mail_to user.email, 'data-tippy-content': 'Click to send an email' %>
+          </td>
+          <td>
+            <span data-tippy-content="<%= format_time(user.created_at) %>"><%= time_ago user.created_at %></span>
+          </td>
+          <td>
+            <a data-modal-url="<%= "/users/#{user.id}" %>" data-modal-title="User details" class="btn btn-outline">Details</a>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div class="text-center mt-10">
+  <%== pagy_nav(@pagy) %>
+</div>
