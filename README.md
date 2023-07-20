@@ -4,6 +4,8 @@
 
 > Fork of https://github.com/ralixjs/rails-ralix-tailwind
 
+![img_1.png](img_1.png)
+
 Powered by:
 
 - [Rails](https://rubyonrails.org)
@@ -12,6 +14,7 @@ Powered by:
 - [PostgreSQL](https://www.postgresql.org)
 - [Turbo](https://turbo.hotwired.dev)
 - [esbuild](https://esbuild.github.io)
+- [Admin](https://www.getmotoradmin.com/ruby-on-rails)
 
 Rails v7 application template ready to start building your next project, with a pre-configured modern front-end stack and some extras:
 
@@ -42,3 +45,9 @@ Start the development server:
 ```
 > bin/dev
 ```
+
+## Usage
+
+### Admin
+Admin dashboard is available at `/super_admin` path. you can change in `routes.rb` file.
+![img.png](img.png)
