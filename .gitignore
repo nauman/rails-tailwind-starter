@@ -22,3 +22,5 @@
 
 # Ignore ENV files
 .env
+.idea
+.tool-versions
