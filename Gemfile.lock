@@ -66,6 +66,9 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     ar_lazy_preload (1.1.2)
       rails (>= 5.2)
     audited (5.3.3)
@@ -105,6 +108,8 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     ffi (1.15.5)
+    friendly_id (5.5.0)
+      activerecord (>= 4.0.0)
     fugit (1.8.1)
       et-orbi (~> 1, >= 1.2.7)
       raabro (~> 1.4)
@@ -281,6 +286,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  annotate (~> 3.2)
   bootsnap (~> 1.13)
   cancancan (~> 3.4)
   cssbundling-rails (~> 1.1)
@@ -288,6 +294,7 @@ DEPENDENCIES
   devise (~> 4.8)
   dotenv-rails
   faker (~> 3)
+  friendly_id (~> 5.5)
   heroicon (~> 1.0)
   image_processing (~> 1.2)
   jsbundling-rails (~> 1.1)

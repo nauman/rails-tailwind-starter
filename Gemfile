@@ -31,3 +31,7 @@ group :development do
 end
 
 gem "motor-admin", "~> 0.4.20"
+
+gem "friendly_id", "~> 5.5"
+
+gem "annotate", "~> 3.2", :group => :development

@@ -1,7 +1,21 @@
+# == Schema Information
+#
+# Table name: articles
+#
+#  id         :bigint           not null, primary key
+#  title      :string
+#  body       :text
+#  user_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  slug       :string
+#
 class Article < ApplicationRecord
+  extend FriendlyId
   belongs_to :user
 
   has_rich_text :body
+  friendly_id :title, use: :slugged
 
   validates :title, :body, presence: true
   validates :title, length: { minimum: 5 }

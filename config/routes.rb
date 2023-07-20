@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :articles
+
+  namespace :blog do
+    get '/:slug', to: 'articles#show',  as: :article
+    get '/',      to: 'articles#index', as: :articles
+  end
+
   resource :user, only: %i[edit update destroy]
   resources :users, only: %i[index show]
 
