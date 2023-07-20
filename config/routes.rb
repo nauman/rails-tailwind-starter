@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Motor::Admin => '/motor_admin'
   devise_for :users, controllers: {
     omniauth_callbacks: 'users/omniauth_callbacks'
   }

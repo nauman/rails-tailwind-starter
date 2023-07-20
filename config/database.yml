@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch("DATABASE_NAME", "rails-ralix-tailwind_development")  %>
+  database: <%= ENV.fetch("DATABASE_NAME", "rails-tailwind_development")  %>
 
 test:
   <<: *default
-  database: <%= ENV.fetch("DATABASE_NAME", "rails-ralix-tailwind_test")  %>
+  database: <%= ENV.fetch("DATABASE_NAME", "rails--tailwind_test")  %>
 
 production:
   <<: *default
-  database: <%= ENV.fetch("DATABASE_NAME", "rails-ralix-tailwind_production")  %>
+  database: <%= ENV.fetch("DATABASE_NAME", "rails-tailwind_production")  %>

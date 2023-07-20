@@ -2,6 +2,8 @@
 
 > Starter Kit to build modern Rails applications fast
 
+> Fork of https://github.com/ralixjs/rails-ralix-tailwind
+
 Powered by:
 
 - [Rails](https://rubyonrails.org)
@@ -20,6 +22,7 @@ Rails v7 application template ready to start building your next project, with a 
 - 🔍 Searching, via [Ransack](https://github.com/activerecord-hackery/ransack)
 - 📝 Rich text edition, via [Trix](https://trix-editor.org)
 - 🔢 Pagination, via [Pagy](https://github.com/ddnexus/pagy)
+- 🏵️ Admin dashboard, via [MotorAdmin](https://www.getmotoradmin.com/ruby-on-rails)
 - 📄 Static pages controller (About, Terms, ...)
 - 🔴 Custom errors pages: 404, 422, 500
 - 📚 *Ready-to-use* components: Tables, Buttons, Forms, Cards, Modals and Tooltips
