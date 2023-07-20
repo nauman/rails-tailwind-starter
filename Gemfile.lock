@@ -79,7 +79,7 @@ GEM
     cancancan (3.5.0)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
-    cssbundling-rails (1.1.2)
+    cssbundling-rails (1.2.0)
       railties (>= 6.0.0)
     date (3.3.3)
     debug (1.8.0)
@@ -283,7 +283,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (~> 1.13)
   cancancan (~> 3.4)
-  cssbundling-rails (~> 1.1)
+  cssbundling-rails (~> 1.2)
   debug
   devise (~> 4.8)
   dotenv-rails
