@@ -4,7 +4,7 @@
   "dependencies": {
     "@hotwired/turbo-rails": "^7.3.0",
     "@rails/actiontext": "^7.0.5",
-    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/forms": "^0.5.5",
     "esbuild": "^0.18.17",
     "micromodal": "^0.4.10",
     "ralix": "^1.4.0",
