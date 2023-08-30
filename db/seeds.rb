@@ -13,7 +13,8 @@ unless User.exists?(:admin)
   User.create!(
     name: "Admin",
     email: "admin@test.com",
-    password: "testtest"
+    password: "testtest",
+    admin: true
   )
   puts "Created admin user with email: admin@test.com and password: testtest"
 end
