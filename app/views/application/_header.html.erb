@@ -3,12 +3,12 @@
     <div class="flex h-16 items-center justify-between">
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <a href="<%= root_path %>" class="text-white text-2xl">Starter Kit</h2>
+          <a href="<%= root_path %>" class="text-white text-2xl">Starter Kit</a>
         </div>
         <div class="hidden sm:block">
           <div class="ml-8 flex items-baseline space-x-4">
             <a href="<%= root_path %>" class="<%= nav_link_class("home") %>">Home</a>
-            <a href="<%= articles_path %>" class="<%= nav_link_class("articles") %>">Articles</a>
+            <a href="<%= blog_articles_path %>" class="<%= nav_link_class("articles") %>">Blog</a>
             <a href="<%= users_path %>" class="<%= nav_link_class("users") %>">Users</a>
           </div>
         </div>
@@ -37,7 +37,7 @@
   <div class="sm:hidden hidden mobile-menu">
     <div class="space-y-2 px-2 pb-3 sm:px-3">
       <a href="<%= root_path %>" class="<%= nav_link_class("home", "block") %>">Home</a>
-      <a href="<%= articles_path %>" class="<%= nav_link_class("articles", "block") %>">Articles</a>
+      <a href="<%= blog_articles_path %>" class="<%= nav_link_class("articles.bak", "block") %>">Blog</a>
       <a href="<%= users_path %>" class="<%= nav_link_class("users", "block") %>">Users</a>
       <% unless user_signed_in? %>
         <a href="<%= new_user_session_path %>" class="<%= nav_link_class(nil, "block") %>">Sign in</a>

@@ -1,12 +1,12 @@
 <div class="flex items-center justify-between">
   <h1>Articles</h1>
-  <%= link_to new_article_path, class: 'btn' do %>
+  <%= link_to new_blog_article_path, class: 'btn' do %>
     <%= heroicon "plus" %>
     New article
   <% end %>
 </div>
 
-<%= search_form_for @q, data: { turbo_frame: "search" } do |f| %>
+<%= search_form_for [:blog, @q], data: { turbo_frame: "search" } do |f| %>
   <div class="relative">
     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
       <%= heroicon "magnifying-glass" %>
@@ -20,7 +20,7 @@
     <% @articles.each do |article| %>
       <article class="card">
         <h3 class="card-title">
-          <%= link_to article.title, article %>
+          <%= link_to article.title, [:blog, article] %>
         </h3>
         <p class="card-subtitle">
           <%= author_and_date(article) %>

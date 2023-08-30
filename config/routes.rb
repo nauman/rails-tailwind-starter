@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
   mount Motor::Admin => '/super_admin'
+
   devise_for :users, controllers: {
     omniauth_callbacks: 'users/omniauth_callbacks'
   }
 
   root "home#index"
 
-  resources :articles
+  # resources :articles
 
   namespace :blog do
-    get '/:slug', to: 'articles#show',  as: :article
-    get '/',      to: 'articles#index', as: :articles
+    resources :articles
   end
 
   resource :user, only: %i[edit update destroy]
