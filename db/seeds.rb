@@ -6,6 +6,16 @@ if User.none?
       password: "1234asdf"
     )
   end
+  puts "Created dummy users"
+end
+
+unless User.exists?(:admin)
+  User.create!(
+    name: "Admin",
+    email: "admin@test.com",
+    password: "testtest"
+  )
+  puts "Created admin user with email: admin@test.com and password: testtest"
 end
 
 if Article.none?
@@ -16,4 +26,5 @@ if Article.none?
       user: User.all.sample
     )
   end
+  puts "Created dummy articles"
 end
