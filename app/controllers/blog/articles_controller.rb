@@ -32,7 +32,7 @@ class Blog::ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      redirect_to @article, notice: "Article was successfully updated."
+      redirect_to [:blog, @article], notice: "Article was successfully updated."
     else
       render :edit, status: :unprocessable_entity
     end
@@ -41,7 +41,7 @@ class Blog::ArticlesController < ApplicationController
   def destroy
     @article.destroy
 
-    redirect_to articles_url, notice: "Article was successfully destroyed."
+    redirect_to blog_articles_url, notice: "Article was successfully destroyed."
   end
 
   private

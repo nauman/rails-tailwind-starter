@@ -4,5 +4,5 @@
 
 <div class="mt-8">
   <p>Be careful! This action is irreversible.</p>
-  <%= button_to "Destroy", @article, method: :delete, class: "btn btn-danger" %>
+  <%= button_to "Destroy", [:blog, @article], method: :delete, class: "btn btn-danger" %>
 </div>
