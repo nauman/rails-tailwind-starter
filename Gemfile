@@ -30,7 +30,7 @@ group :development do
   gem "dotenv-rails"
 end
 
-gem "motor-admin", "~> 0.4.20"
+gem "motor-admin", "~> 0.4.21"
 
 gem "friendly_id", "~> 5.5"
 
