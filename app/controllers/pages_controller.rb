@@ -4,4 +4,7 @@ class PagesController < ApplicationController
   rescue ActionView::MissingTemplate
     render "errors/not_found", status: 404
   end
+
+  def dashboard
+  end
 end

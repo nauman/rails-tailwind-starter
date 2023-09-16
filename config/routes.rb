@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[index show]
 
   get "/pages/:page" => "pages#show", as: :page
+  get "/pages/dashboard" => "pages#dashboard", as: :dashboard
 
   match '/404', to: 'errors#not_found', via: :all
   match '/422', to: 'errors#internal_server_error', via: :all
