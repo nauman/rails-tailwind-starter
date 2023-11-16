@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
 gem "rails", "~> 7.0"
-gem "pg", "~> 1.4"
+gem "pg", "~> 1.5"
 gem "puma", "~> 6.3"
 gem "bootsnap", "~> 1.13", require: false
 gem "devise", "~> 4.8"
