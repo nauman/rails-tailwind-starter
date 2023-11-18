@@ -32,7 +32,7 @@ class Article < ApplicationRecord
   end
 
   def self.ransackable_associations(auth_object = nil)
-    %w(rich_text_body user)
+    %w(body user)
   end
 
   # Generate a random ID for the slug

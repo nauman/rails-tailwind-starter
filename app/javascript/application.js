@@ -6,7 +6,6 @@ import "@rails/actiontext"
 
 // Controllers
 import AppCtrl      from './controllers/app'
-import ArticlesCtrl from './controllers/articles'
 
 // Components
 import RemoteModal  from './components/remote_modal'
@@ -14,7 +13,6 @@ import Tooltip      from './components/tooltip'
 
 const App = new RalixApp({
   routes: {
-    '/articles$': ArticlesCtrl,
     '/.*': AppCtrl
   },
   components: [
@@ -24,3 +22,4 @@ const App = new RalixApp({
 })
 
 App.start()
+import "./controllers"

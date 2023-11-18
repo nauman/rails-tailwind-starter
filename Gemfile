@@ -23,6 +23,8 @@ gem "jsbundling-rails", "~> 1.1"
 gem "cssbundling-rails", "~> 1.3"
 gem "turbo-rails", "~> 1.3"
 gem "heroicon", "~> 1.0"
+gem "stimulus-rails", "~> 1.3"
+gem "hotwire-rails", "~> 0.1.3"
 
 group :development do
   gem "web-console"
@@ -35,3 +37,4 @@ gem "motor-admin", "~> 0.4.20"
 gem "friendly_id", "~> 5.5"
 
 gem "annotate", "~> 3.2", :group => :development
+

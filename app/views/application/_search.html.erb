@@ -1,0 +1,8 @@
+<%= search_form_for [:blog, @q], data: { turbo_frame: "search", controller: "finder", target: "finder.searchForm" } do |f| %>
+  <div class="relative">
+    <%= f.text_field :title_or_body_cont,
+                     class: "peer px-4 py-2 rounded-md lg:w-80 w-5/6 outline-none text-sm text-gray-700 lg:pr-2 border-none",
+                     data: { action: "input->finder#search",  target: "finder.searchInput" },
+                     placeholder: "Search ..." %>
+  </div>
+<% end %>

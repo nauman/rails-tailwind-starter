@@ -6,14 +6,7 @@
   <% end %>
 </div>
 
-<%= search_form_for [:blog, @q], data: { turbo_frame: "search" } do |f| %>
-  <div class="relative">
-    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-      <%= heroicon "magnifying-glass" %>
-    </div>
-    <%= f.text_field :title_or_body_cont, class: "search-input p-3 pl-10 text-sm", onkeyup: "search()", placeholder: "Search ..." %>
-  </div>
-<% end %>
+<%= render partial: "application/search" %>
 
 <%= turbo_frame_tag "search", target: "_top" do %>
   <div class="mt-8 grid sm:grid-cols-2 gap-8">
