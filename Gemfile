@@ -6,7 +6,7 @@ gem "rails", "~> 7.1"
 gem "pg", "~> 1.5"
 gem "puma", "~> 6.3"
 gem "bootsnap", "~> 1.13", require: false
-gem "devise", "~> 4.8"
+gem "devise", "~> 4.9"
 gem "omniauth-facebook", "~> 9.0"
 gem "omniauth-github", "~> 2.0"
 gem "omniauth-google-oauth2", "~> 1.1"
