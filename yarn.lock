@@ -756,10 +756,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-trix@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.0.7.tgz#21cd94616864f908ec802fe029e69f628a694eca"
-  integrity sha512-qnqElm1BA4XYMgwowEHlF4xE4wfEjFBpmybvdzVUQP4OTzQxRXVEQNP4WSvWT6HzV4wYFP06/HSo14fWoGo6jQ==
+trix@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.1.3.tgz#38c8725cd1864ca5e9784aed7d043fa11669ba81"
+  integrity sha512-LqMp67LiKMQytAHKqNL1Jgmfz69ViW+WBOQTPA2BlMIuxic1mw5vHgDtOE0bvvojUdjAxh0EJtLpJn6BC/2JKw==
 
 ts-interface-checker@^0.1.9:
   version "0.1.13"
